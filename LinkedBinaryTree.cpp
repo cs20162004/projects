@@ -1,3 +1,4 @@
+//Alisheri Anvar
 #include <iostream>
 #include <list>
 #include <stdexcept>
