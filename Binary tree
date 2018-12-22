@@ -72,35 +72,6 @@ void print_inorder(const LinkedBinaryTree<Symbol>& tree) {
 
 	inorder(tree.root());
 
-
-	//LinkedBinaryTree<Symbol> left;
-	//left.addRoot();
-	//cout << *tree.root();
-	//tree.root() = tree.root().left();
-	//cout << *tree.root();
-	/*
-	std::stack<Symbol> ali;
-	Symbol oper;
-	std::list<LinkedBinaryTree<Symbol>::Position>::iterator p;
-	std::list<LinkedBinaryTree<Symbol>::Position> listp;
-	listp = tree.positions(); int i = 1;
-	for (p = listp.begin(); p != listp.end(); p++){
-		if ((**p).isOperator())	{
-			ali.push(**p);
-			//cout << "( ";
-		}
-		else if ((**p).isConstant() || (**p).isVariable()){
-			
-			if (p != --listp.end()) {
-				if (ali.empty())	throw runtime_error("Invalid Expression1.");
-				oper = ali.top(); ali.pop();
-				cout << **p << " " << oper << " ";
-				}
-			else if (p == --listp.end()) 	{cout << **p << " ";}
-		}
-
-		else throw runtime_error("Invalid Expression.");
-	}*/
 }
 
 
@@ -193,7 +164,6 @@ void simplify_subtree(LinkedBinaryTree<Symbol>& tree) {
 
 
 		/*cout << "FGSFDGSFD" << endl;
-	//if (!(tree.root()).isExternal()){
 		LinkedBinaryTree<Symbol>::Position a = tree.root();
 		cout << *a << endl;
 		a = a.left();
